@@ -3,36 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Platão: A Dialética Interativa</title>
+    <title>A Dialética: Uma Viagem da Alma</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Platão: A Anamnese e a Dialética</h1>
-            <p>Um diálogo para despertar o conhecimento que já reside na sua alma.</p>
-        </header>
 
-        <main>
-            <div id="dialectic-simulator">
-                <h2 id="socrates-question">O que é a Justiça?</h2>
-                <div id="dialogue-history"></div>
-                <textarea id="user-answer" placeholder="Formule a sua definição..."></textarea>
-                <button id="submit-button">Responder a Sócrates</button>
-            </div>
+    <section id="home-page" class="page active">
+        <div class="content-wrapper">
+            <h1>A Dialética: Uma Viagem da Alma</h1>
+            <img src="https://images.unsplash.com/photo-1531578181345-468a1a8f3303?q=80&w=2070" alt="Estátua grega a pensar" class="main-image">
+            <h2>O que é a Anamnese?</h2>
+            <p>Platão acreditava que a nossa alma é imortal e que, antes de habitar o nosso corpo, ela contemplou a verdade pura no "Mundo das Formas". Aprender, para ele, não é descobrir algo novo, mas sim **recordar (Anamnese)** o que a alma já sabe. A ferramenta para esta recordação é a Filosofia, praticada através da **Dialética**.</p>
+            <h2>Como funciona a Dialética?</h2>
+            <p>É um método de diálogo rigoroso, de pergunta e resposta, que nos força a examinar as nossas crenças, a descartar as falsas opiniões e a "dar à luz" a verdade que já reside dentro de nós. Está pronto para iniciar a sua jornada?</p>
+            <button id="start-button" class="cta-button">Iniciar o Processo</button>
+        </div>
+    </section>
 
-            <div id="discovery-mural">
-                <h2>Mural das Descobertas</h2>
-                <p>Veja as conclusões a que outras almas chegaram.</p>
-                <div id="mural-content">
-                    </div>
+    <section id="consent-page" class="page">
+        <div class="content-wrapper">
+            <h2>Consentimento de Recolha de Dados</h2>
+            <p>Para lhe proporcionar um resultado final personalizado, o seu percurso através deste diálogo filosófico será registado de forma anónima. As suas escolhas ajudam-nos a compreender as diferentes afinidades filosóficas.</p>
+            <p>Nenhum dado pessoal identificável será guardado. Ao clicar em "Concordo", consente com a recolha anónima das suas respostas para fins de análise e para a apresentação do seu resultado.</p>
+            <button id="agree-button" class="cta-button">Concordo e Desejo Continuar</button>
+            <button id="disagree-button" class="secondary-button">Voltar à Página Inicial</button>
+        </div>
+    </section>
+
+    <section id="dialogue-page" class="page">
+        <div class="content-wrapper">
+            <div id="progress-bar-container">
+                <div id="progress-bar"></div>
             </div>
-        </main>
-    </div>
+            <h2 id="dialogue-question"></h2>
+            <p id="dialogue-context"></p>
+            <div id="dialogue-options">
+                </div>
+        </div>
+    </section>
+
+    <section id="final-result-page" class="page">
+        <div class="content-wrapper">
+            <h2>A Sua Afinidade Filosófica</h2>
+            <div id="loading-spinner" class="spinner"></div>
+            <div id="result-content" style="display: none;">
+                <p id="result-text"></p>
+                <p><strong>O seu percurso foi guardado anonimamente. Obrigado por participar nesta jornada dialética.</strong></p>
+                <button id="restart-button" class="cta-button">Refazer a Jornada</button>
+            </div>
+        </div>
+    </section>
 
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
-
     <script src="script.js"></script>
 </body>
 </html>
