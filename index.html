@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platão: A Dialética Interativa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Platão: A Anamnese e a Dialética</h1>
+            <p>Um diálogo para despertar o conhecimento que já reside na sua alma.</p>
+        </header>
+
+        <main>
+            <div id="dialectic-simulator">
+                <h2 id="socrates-question">O que é a Justiça?</h2>
+                <div id="dialogue-history"></div>
+                <textarea id="user-answer" placeholder="Formule a sua definição..."></textarea>
+                <button id="submit-button">Responder a Sócrates</button>
+            </div>
+
+            <div id="discovery-mural">
+                <h2>Mural das Descobertas</h2>
+                <p>Veja as conclusões a que outras almas chegaram.</p>
+                <div id="mural-content">
+                    </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
