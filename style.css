@@ -1,0 +1,99 @@
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f4f1eb;
+    color: #3a3a3a;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid #dcd1b4;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #5a4e3a;
+}
+
+h2 {
+    color: #8c7d6b;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+#dialectic-simulator {
+    margin-bottom: 40px;
+}
+
+#dialogue-history {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    min-height: 50px;
+}
+
+#dialogue-history p {
+    margin: 0 0 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #ccc;
+}
+
+#dialogue-history p:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura */
+    margin-bottom: 10px;
+    min-height: 80px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #5a4e3a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #8c7d6b;
+}
+
+#discovery-mural {
+    margin-top: 40px;
+}
+
+#mural-content div {
+    background-color: #faf8f2;
+    border-left: 3px solid #dcd1b4;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 0 4px 4px 0;
+}
